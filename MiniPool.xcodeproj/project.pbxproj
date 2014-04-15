@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E300F67F16A5E0DD0088A91A /* LineContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E300F67D16A5E0DC0088A91A /* LineContainer.cpp */; };
+		E313558016A41CDE00FC06D5 /* GLES-Render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E313557E16A41CDE00FC06D5 /* GLES-Render.cpp */; };
+		E325854D16A6D6ED00A05ED5 /* ball.wav in Resources */ = {isa = PBXBuildFile; fileRef = E325854916A6D6ED00A05ED5 /* ball.wav */; };
+		E325854E16A6D6ED00A05ED5 /* drop.wav in Resources */ = {isa = PBXBuildFile; fileRef = E325854A16A6D6ED00A05ED5 /* drop.wav */; };
+		E325854F16A6D6ED00A05ED5 /* hit.wav in Resources */ = {isa = PBXBuildFile; fileRef = E325854B16A6D6ED00A05ED5 /* hit.wav */; };
+		E325855016A6D6ED00A05ED5 /* whitedrop.wav in Resources */ = {isa = PBXBuildFile; fileRef = E325854C16A6D6ED00A05ED5 /* whitedrop.wav */; };
+		E33DD65216A3503B00EB68FE /* Ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E33DD65016A3503B00EB68FE /* Ball.cpp */; };
+		E33DD65616A3504300EB68FE /* Cue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E33DD65416A3504300EB68FE /* Cue.cpp */; };
+		E3AF179B16A5B25C00DC80A6 /* ipad in Resources */ = {isa = PBXBuildFile; fileRef = E3AF179816A5B25C00DC80A6 /* ipad */; };
+		E3AF179C16A5B25C00DC80A6 /* ipadhd in Resources */ = {isa = PBXBuildFile; fileRef = E3AF179916A5B25C00DC80A6 /* ipadhd */; };
+		E3AF179D16A5B25C00DC80A6 /* iphone in Resources */ = {isa = PBXBuildFile; fileRef = E3AF179A16A5B25C00DC80A6 /* iphone */; };
+		E3E6027816A477940088DDFF /* CollisionListener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3E6027616A477930088DDFF /* CollisionListener.cpp */; };
 		E3ED859316A34D3D00F0CB5C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3ED859216A34D3D00F0CB5C /* QuartzCore.framework */; };
 		E3ED859516A34D3D00F0CB5C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3ED859416A34D3D00F0CB5C /* OpenGLES.framework */; };
 		E3ED859716A34D3D00F0CB5C /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3ED859616A34D3D00F0CB5C /* OpenAL.framework */; };
@@ -246,11 +258,28 @@
 		E3ED88B616A34D4300F0CB5C /* b2WheelJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3ED88B516A34D4300F0CB5C /* b2WheelJoint.cpp */; };
 		E3ED88BA16A34D4300F0CB5C /* b2Rope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3ED88B916A34D4300F0CB5C /* b2Rope.cpp */; };
 		E3ED88C116A34D4300F0CB5C /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3ED88C016A34D4300F0CB5C /* AppDelegate.cpp */; };
-		E3ED88C416A34D4300F0CB5C /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3ED88C316A34D4300F0CB5C /* HelloWorldScene.cpp */; };
-		E3ED88C616A34D4300F0CB5C /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = E3ED88C516A34D4300F0CB5C /* blocks.png */; };
+		E3ED88C416A34D4300F0CB5C /* GameLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3ED88C316A34D4300F0CB5C /* GameLayer.cpp */; };
+		E3ED88CE16A34ED300F0CB5C /* b2Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3ED88CC16A34ED300F0CB5C /* b2Sprite.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E300F67D16A5E0DC0088A91A /* LineContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LineContainer.cpp; path = Classes/LineContainer.cpp; sourceTree = "<group>"; };
+		E300F67E16A5E0DD0088A91A /* LineContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LineContainer.h; path = Classes/LineContainer.h; sourceTree = "<group>"; };
+		E313557E16A41CDE00FC06D5 /* GLES-Render.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "GLES-Render.cpp"; path = "Classes/GLES-Render.cpp"; sourceTree = "<group>"; };
+		E313557F16A41CDE00FC06D5 /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GLES-Render.h"; path = "Classes/GLES-Render.h"; sourceTree = "<group>"; };
+		E325854916A6D6ED00A05ED5 /* ball.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = ball.wav; path = Resources/ball.wav; sourceTree = "<group>"; };
+		E325854A16A6D6ED00A05ED5 /* drop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = drop.wav; path = Resources/drop.wav; sourceTree = "<group>"; };
+		E325854B16A6D6ED00A05ED5 /* hit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = hit.wav; path = Resources/hit.wav; sourceTree = "<group>"; };
+		E325854C16A6D6ED00A05ED5 /* whitedrop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = whitedrop.wav; path = Resources/whitedrop.wav; sourceTree = "<group>"; };
+		E33DD65016A3503B00EB68FE /* Ball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Ball.cpp; path = Classes/Ball.cpp; sourceTree = "<group>"; };
+		E33DD65116A3503B00EB68FE /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ball.h; path = Classes/Ball.h; sourceTree = "<group>"; };
+		E33DD65416A3504300EB68FE /* Cue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Cue.cpp; path = Classes/Cue.cpp; sourceTree = "<group>"; };
+		E33DD65516A3504300EB68FE /* Cue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cue.h; path = Classes/Cue.h; sourceTree = "<group>"; };
+		E3AF179816A5B25C00DC80A6 /* ipad */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ipad; path = Resources/ipad; sourceTree = "<group>"; };
+		E3AF179916A5B25C00DC80A6 /* ipadhd */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ipadhd; path = Resources/ipadhd; sourceTree = "<group>"; };
+		E3AF179A16A5B25C00DC80A6 /* iphone */ = {isa = PBXFileReference; lastKnownFileType = folder; name = iphone; path = Resources/iphone; sourceTree = "<group>"; };
+		E3E6027616A477930088DDFF /* CollisionListener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CollisionListener.cpp; path = Classes/CollisionListener.cpp; sourceTree = "<group>"; };
+		E3E6027716A477930088DDFF /* CollisionListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollisionListener.h; path = Classes/CollisionListener.h; sourceTree = "<group>"; };
 		E3ED858E16A34D3D00F0CB5C /* MiniPool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniPool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3ED859216A34D3D00F0CB5C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E3ED859416A34D3D00F0CB5C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -769,9 +798,10 @@
 		E3ED88BD16A34D4300F0CB5C /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		E3ED88BF16A34D4300F0CB5C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		E3ED88C016A34D4300F0CB5C /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
-		E3ED88C216A34D4300F0CB5C /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
-		E3ED88C316A34D4300F0CB5C /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
-		E3ED88C516A34D4300F0CB5C /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blocks.png; path = Resources/blocks.png; sourceTree = "<group>"; };
+		E3ED88C216A34D4300F0CB5C /* GameLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameLayer.h; path = Classes/GameLayer.h; sourceTree = "<group>"; };
+		E3ED88C316A34D4300F0CB5C /* GameLayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GameLayer.cpp; path = Classes/GameLayer.cpp; sourceTree = "<group>"; };
+		E3ED88CC16A34ED300F0CB5C /* b2Sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = b2Sprite.cpp; path = Classes/b2Sprite.cpp; sourceTree = "<group>"; };
+		E3ED88CD16A34ED300F0CB5C /* b2Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = b2Sprite.h; path = Classes/b2Sprite.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -841,6 +871,13 @@
 		E3ED85A316A34D3D00F0CB5C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E325854916A6D6ED00A05ED5 /* ball.wav */,
+				E325854A16A6D6ED00A05ED5 /* drop.wav */,
+				E325854B16A6D6ED00A05ED5 /* hit.wav */,
+				E325854C16A6D6ED00A05ED5 /* whitedrop.wav */,
+				E3AF179816A5B25C00DC80A6 /* ipad */,
+				E3AF179916A5B25C00DC80A6 /* ipadhd */,
+				E3AF179A16A5B25C00DC80A6 /* iphone */,
 				E3ED85A416A34D3D00F0CB5C /* CloseNormal.png */,
 				E3ED85A616A34D3D00F0CB5C /* CloseSelected.png */,
 				E3ED85A816A34D3D00F0CB5C /* Default.png */,
@@ -853,7 +890,6 @@
 				E3ED85B616A34D3D00F0CB5C /* Icon@2x.png */,
 				E3ED85B816A34D3D00F0CB5C /* iTunesArtwork */,
 				E3ED85BA16A34D3D00F0CB5C /* Info.plist */,
-				E3ED88C516A34D4300F0CB5C /* blocks.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1809,10 +1845,22 @@
 		E3ED88BE16A34D4300F0CB5C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E300F67D16A5E0DC0088A91A /* LineContainer.cpp */,
+				E300F67E16A5E0DD0088A91A /* LineContainer.h */,
+				E313557E16A41CDE00FC06D5 /* GLES-Render.cpp */,
+				E313557F16A41CDE00FC06D5 /* GLES-Render.h */,
 				E3ED88BF16A34D4300F0CB5C /* AppDelegate.h */,
 				E3ED88C016A34D4300F0CB5C /* AppDelegate.cpp */,
-				E3ED88C216A34D4300F0CB5C /* HelloWorldScene.h */,
-				E3ED88C316A34D4300F0CB5C /* HelloWorldScene.cpp */,
+				E3ED88C216A34D4300F0CB5C /* GameLayer.h */,
+				E3ED88C316A34D4300F0CB5C /* GameLayer.cpp */,
+				E3ED88CC16A34ED300F0CB5C /* b2Sprite.cpp */,
+				E3ED88CD16A34ED300F0CB5C /* b2Sprite.h */,
+				E33DD65016A3503B00EB68FE /* Ball.cpp */,
+				E33DD65116A3503B00EB68FE /* Ball.h */,
+				E33DD65416A3504300EB68FE /* Cue.cpp */,
+				E33DD65516A3504300EB68FE /* Cue.h */,
+				E3E6027616A477930088DDFF /* CollisionListener.cpp */,
+				E3E6027716A477930088DDFF /* CollisionListener.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1879,7 +1927,13 @@
 				E3ED85B716A34D3D00F0CB5C /* Icon@2x.png in Resources */,
 				E3ED85B916A34D3D00F0CB5C /* iTunesArtwork in Resources */,
 				E3ED864B16A34D3E00F0CB5C /* ChangeLog in Resources */,
-				E3ED88C616A34D4300F0CB5C /* blocks.png in Resources */,
+				E3AF179B16A5B25C00DC80A6 /* ipad in Resources */,
+				E3AF179C16A5B25C00DC80A6 /* ipadhd in Resources */,
+				E3AF179D16A5B25C00DC80A6 /* iphone in Resources */,
+				E325854D16A6D6ED00A05ED5 /* ball.wav in Resources */,
+				E325854E16A6D6ED00A05ED5 /* drop.wav in Resources */,
+				E325854F16A6D6ED00A05ED5 /* hit.wav in Resources */,
+				E325855016A6D6ED00A05ED5 /* whitedrop.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2108,7 +2162,13 @@
 				E3ED88B616A34D4300F0CB5C /* b2WheelJoint.cpp in Sources */,
 				E3ED88BA16A34D4300F0CB5C /* b2Rope.cpp in Sources */,
 				E3ED88C116A34D4300F0CB5C /* AppDelegate.cpp in Sources */,
-				E3ED88C416A34D4300F0CB5C /* HelloWorldScene.cpp in Sources */,
+				E3ED88C416A34D4300F0CB5C /* GameLayer.cpp in Sources */,
+				E3ED88CE16A34ED300F0CB5C /* b2Sprite.cpp in Sources */,
+				E33DD65216A3503B00EB68FE /* Ball.cpp in Sources */,
+				E33DD65616A3504300EB68FE /* Cue.cpp in Sources */,
+				E313558016A41CDE00FC06D5 /* GLES-Render.cpp in Sources */,
+				E3E6027816A477940088DDFF /* CollisionListener.cpp in Sources */,
+				E300F67F16A5E0DD0088A91A /* LineContainer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2119,6 +2179,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -2140,7 +2201,9 @@
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/third_party/ios\"",
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/ios\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2150,6 +2213,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2168,8 +2232,10 @@
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/third_party/ios\"",
 					"\"$(PROJECT_NAME)/libs/cocos2dx/platform/ios\"",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -2185,6 +2251,7 @@
 				GCC_PREFIX_HEADER = MiniPool/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = MiniPool/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/MiniPool/libs/cocos2dx/platform/third_party/ios/libraries\"",
@@ -2208,6 +2275,7 @@
 				GCC_PREFIX_HEADER = MiniPool/Prefix.pch;
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				INFOPLIST_FILE = MiniPool/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/MiniPool/libs/cocos2dx/platform/third_party/ios/libraries\"",
@@ -2242,6 +2310,7 @@
 				E3ED88CB16A34D4300F0CB5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

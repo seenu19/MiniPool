@@ -284,7 +284,7 @@ void ccDrawCircle( const CCPoint& center, float radius, float angle, unsigned in
     ccGLEnableVertexAttribs( kCCVertexAttribFlag_Position );
 
     glVertexAttribPointer(kCCVertexAttrib_Position, 2, GL_FLOAT, GL_FALSE, 0, vertices);
-    glDrawArrays(GL_LINE_STRIP, 0, (GLsizei) segments+additionalSegment);
+    glDrawArrays(GL_TRIANGLE_FAN, 0, (GLsizei) segments+additionalSegment);
 
     free( vertices );
 
